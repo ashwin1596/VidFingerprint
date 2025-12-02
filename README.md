@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Build](https://img.shields.io/badge/Build-CMake-red.svg)](CMakeLists.txt)
 
-A high-performance, distributed content identification system designed for processing millions of concurrent requests and petabytes of data daily. Built with modern C++17, this system demonstrates enterprise-grade backend engineering practices relevant to large-scale systems like those at LG Ad Solutions.
+A high-performance, distributed content identification system designed for processing millions of concurrent requests and petabytes of data daily. Built with modern C++17, this system demonstrates enterprise-grade backend engineering practices relevant to large-scale systems.
 
 ## Overview
 
