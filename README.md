@@ -117,7 +117,7 @@ brew install cmake sqlite3
 ```bash
 # Clone the repository
 git clone https://github.com/ashwin1596/VidFingerprint
-cd video-fingerprint-system
+cd VidFingerprint
 
 # Create build directory
 mkdir build && cd build
