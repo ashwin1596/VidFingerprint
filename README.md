@@ -116,7 +116,7 @@ brew install cmake sqlite3
 ### Quick Build
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/ashwin1596/VidFingerprint
 cd video-fingerprint-system
 
 # Create build directory
