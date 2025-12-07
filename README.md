@@ -1,4 +1,4 @@
-# Real-Time Video Fingerprinting System
+# Real-Time Media Fingerprinting System
 
 [![C++](https://img.shields.io/badge/C++-17-blue.svg)](https://en.cppreference.com/w/cpp/17)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
