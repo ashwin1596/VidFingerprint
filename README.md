@@ -1,10 +1,10 @@
-# Real-Time Video Fingerprinting System
+# Real-Time Media Fingerprinting System
 
 [![C++](https://img.shields.io/badge/C++-17-blue.svg)](https://en.cppreference.com/w/cpp/17)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Build](https://img.shields.io/badge/Build-CMake-red.svg)](CMakeLists.txt)
 
-A high-performance, distributed content identification system designed for processing millions of concurrent requests and petabytes of data daily. Built with modern C++17, this system demonstrates enterprise-grade backend engineering practices relevant to large-scale systems like those at LG Ad Solutions.
+A high-performance, distributed content identification system designed for processing millions of concurrent requests and petabytes of data daily. Built with modern C++17, this system demonstrates enterprise-grade backend engineering practices relevant to large-scale systems.
 
 ## Overview
 
@@ -116,8 +116,8 @@ brew install cmake sqlite3
 ### Quick Build
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd video-fingerprint-system
+git clone https://github.com/ashwin1596/VidFingerprint
+cd VidFingerprint
 
 # Create build directory
 mkdir build && cd build
