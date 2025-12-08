@@ -36,6 +36,7 @@ set(MATCHER_SOURCES
 
 set(UTILS_SOURCES
     src/utils/thread_pool.cpp
+    src/utils/profiler.cpp
 )
 
 set(MONITORING_SOURCES
@@ -83,6 +84,9 @@ target_link_libraries(benchmark_performance PRIVATE vfs_lib)
 
 add_executable(benchmark_concurrency benchmarks/benchmark_concurrency.cpp)
 target_link_libraries(benchmark_concurrency PRIVATE vfs_lib)
+
+add_executable(benchmark_profiled benchmarks/benchmark_profiled.cpp)
+target_link_libraries(benchmark_profiled PRIVATE vfs_lib)
 
 # Installation
 install(TARGETS vfs_demo DESTINATION bin)

@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -Wextra -Wpedantic -O3 -DNDEBUG -O3 -march=native CMakeFiles/benchmark_performance.dir/benchmarks/benchmark_performance.cpp.o -o benchmark_performance  libvfs_lib.a /usr/lib/x86_64-linux-gnu/libsqlite3.so 
