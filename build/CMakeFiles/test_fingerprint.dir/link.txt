@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -Wpedantic -O3 -DNDEBUG -O3 -march=native CMakeFiles/test_fingerprint.dir/tests/test_fingerprint.cpp.o -o test_fingerprint  libvfs_lib.a /usr/lib/x86_64-linux-gnu/libsqlite3.so 

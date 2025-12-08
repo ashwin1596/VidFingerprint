@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -Wpedantic -O3 -DNDEBUG -O3 -march=native CMakeFiles/benchmark_concurrency.dir/benchmarks/benchmark_concurrency.cpp.o -o benchmark_concurrency  libvfs_lib.a /usr/lib/x86_64-linux-gnu/libsqlite3.so 

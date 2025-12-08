@@ -1,0 +1,2 @@
+/usr/bin/ar qc libvfs_lib.a CMakeFiles/vfs_lib.dir/src/core/fingerprint_generator.cpp.o CMakeFiles/vfs_lib.dir/src/database/database_manager.cpp.o CMakeFiles/vfs_lib.dir/src/matcher/matcher_service.cpp.o CMakeFiles/vfs_lib.dir/src/utils/thread_pool.cpp.o CMakeFiles/vfs_lib.dir/src/monitoring/metrics.cpp.o
+/usr/bin/ranlib libvfs_lib.a

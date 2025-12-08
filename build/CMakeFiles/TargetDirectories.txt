@@ -1,0 +1,14 @@
+/mnt/c/Personal/Github/VidFingerprint/build/CMakeFiles/vfs_lib.dir
+/mnt/c/Personal/Github/VidFingerprint/build/CMakeFiles/vfs_demo.dir
+/mnt/c/Personal/Github/VidFingerprint/build/CMakeFiles/test_fingerprint.dir
+/mnt/c/Personal/Github/VidFingerprint/build/CMakeFiles/test_database.dir
+/mnt/c/Personal/Github/VidFingerprint/build/CMakeFiles/test_matcher.dir
+/mnt/c/Personal/Github/VidFingerprint/build/CMakeFiles/benchmark_performance.dir
+/mnt/c/Personal/Github/VidFingerprint/build/CMakeFiles/benchmark_concurrency.dir
+/mnt/c/Personal/Github/VidFingerprint/build/CMakeFiles/test.dir
+/mnt/c/Personal/Github/VidFingerprint/build/CMakeFiles/edit_cache.dir
+/mnt/c/Personal/Github/VidFingerprint/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Personal/Github/VidFingerprint/build/CMakeFiles/list_install_components.dir
+/mnt/c/Personal/Github/VidFingerprint/build/CMakeFiles/install.dir
+/mnt/c/Personal/Github/VidFingerprint/build/CMakeFiles/install/local.dir
+/mnt/c/Personal/Github/VidFingerprint/build/CMakeFiles/install/strip.dir
