@@ -309,7 +309,7 @@ void benchmarkThroughput() {
 - Performance benchmarks
 - Stress tests
 
-## Future Enhancements
+<!-- ## Future Enhancements
 
 ### Immediate (1-3 months)
 1. **MySQL/PostgreSQL**: Replace SQLite for production
@@ -327,7 +327,7 @@ void benchmarkThroughput() {
 1. **Video Fingerprinting**: Extend to video content
 2. **Distributed Tracing**: OpenTelemetry integration
 3. **Auto-scaling**: Kubernetes-based orchestration
-4. **Multi-region**: Geo-distributed deployment
+4. **Multi-region**: Geo-distributed deployment -->
 
 ## Key Takeaways
 
