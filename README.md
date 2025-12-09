@@ -93,6 +93,17 @@ This project implements a **real-time audio/video fingerprinting system** that:
 - Database performance statistics
 - Custom metrics API
 
+## Performance
+   
+   Comprehensive benchmark results: [BENCHMARK_RESULTS.md](BENCHMARK_RESULTS.md)
+   
+   Quick summary (Intel i7-1360P, 16 cores, WSL2):
+   - 46K req/sec sustained
+   - 18.6MB memory
+   - 99.2% cache hit rate
+
+*Note: Performance varies by hardware. Run benchmarks to test on your system.*
+
 ## Requirements
 
 - **C++ Compiler**: GCC 7+ or Clang 5+ (C++17 support)

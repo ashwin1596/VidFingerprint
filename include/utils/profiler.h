@@ -39,6 +39,11 @@ public:
      */
     static void printResourceUsage();
 
+    /**
+     * @brief Print system information
+     */
+    static void printSystemInfo();
+
 private:
     static long parseLine(const std::string& line);
 };

@@ -1,5 +1,6 @@
 #include "matcher/matcher_service.h"
 #include "utils/thread_pool.h"
+#include "utils/profiler.h"
 #include <iostream>
 #include <iomanip>
 #include <chrono>
@@ -223,6 +224,9 @@ int main() {
 ║                                                            ║
 ╚════════════════════════════════════════════════════════════╝
 )" << std::endl;
+
+    // Print system information
+    utils::Profiler::printSystemInfo();
 
     try {
         testThreadPoolPerformance();

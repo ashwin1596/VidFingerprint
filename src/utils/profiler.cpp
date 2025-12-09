@@ -2,6 +2,7 @@
 #include <iostream>
 #include <iomanip>
 #include <unistd.h>
+#include <algorithm>
 
 namespace vfs {
 namespace utils {
@@ -72,6 +73,83 @@ void Profiler::printResourceUsage() {
               << (mem.shared_memory_kb / 1024.0) << " MB" << std::endl;
     std::cout << "\nThreads:" << std::endl;
     std::cout << "  Active Threads: " << cpu.num_threads << std::endl;
+    std::cout << std::endl;
+}
+
+void Profiler::printSystemInfo() {
+    std::cout << "\n=== System Information ===" << std::endl;
+    
+    // CPU info
+    std::ifstream cpuinfo("/proc/cpuinfo");
+    std::string line;
+    std::string cpu_model;
+    int cpu_cores = 0;
+    
+    while (std::getline(cpuinfo, line)) {
+        if (line.find("model name") == 0) {
+            size_t colon = line.find(':');
+            if (colon != std::string::npos && cpu_model.empty()) {
+                cpu_model = line.substr(colon + 2);
+            }
+        }
+        if (line.find("processor") == 0) {
+            cpu_cores++;
+        }
+    }
+    
+    std::cout << "CPU: " << cpu_model << std::endl;
+    std::cout << "Cores: " << cpu_cores << std::endl;
+    
+    // Memory info
+    std::ifstream meminfo("/proc/meminfo");
+    long total_mem_kb = 0;
+    
+    while (std::getline(meminfo, line)) {
+        if (line.find("MemTotal:") == 0) {
+            total_mem_kb = parseLine(line);
+            break;
+        }
+    }
+    
+    std::cout << "RAM: " << std::fixed << std::setprecision(1) 
+              << (total_mem_kb / 1024.0 / 1024.0) << " GB" << std::endl;
+    
+    // OS info
+    std::ifstream osinfo("/etc/os-release");
+    std::string os_name;
+    
+    while (std::getline(osinfo, line)) {
+        if (line.find("PRETTY_NAME=") == 0) {
+            os_name = line.substr(13);
+            // Remove quotes
+            os_name.erase(remove(os_name.begin(), os_name.end(), '"'), os_name.end());
+            break;
+        }
+    }
+    
+    if (!os_name.empty()) {
+        std::cout << "OS: " << os_name << std::endl;
+    }
+    
+    // Compiler info
+    std::cout << "Compiler: ";
+#if defined(__clang__)
+    std::cout << "Clang " << __clang_major__ << "." << __clang_minor__;
+#elif defined(__GNUC__)
+    std::cout << "GCC " << __GNUC__ << "." << __GNUC_MINOR__;
+#else
+    std::cout << "Unknown";
+#endif
+    std::cout << std::endl;
+    
+    std::cout << "Build: ";
+#ifdef NDEBUG
+    std::cout << "Release";
+#else
+    std::cout << "Debug";
+#endif
+    std::cout << std::endl;
+    
     std::cout << std::endl;
 }
 
